@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: white;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 80%;
+    padding: 8px;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#total-amount {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        max-width: 90%;
+        padding: 15px;
+    }
+    input, button, select {
+        font-size: 1em;
+    }
+    label {
+        font-size: 1em;
+    }
+}
